@@ -85,6 +85,14 @@ document.addEventListener("DOMContentLoaded", () => {
         text.style.opacity = 1;
       }, 300);
     });
+
+    // TRADUCI anche le voci del menu a tendina
+    const menuLinks = document.querySelectorAll("#menu a");
+    menuLinks.forEach((link, i) => {
+      if (current.titles[i]) {
+        link.textContent = current.titles[i];
+      }
+    });
   });
 
   scrollTopLink?.addEventListener("click", (e) => {

@@ -192,9 +192,14 @@ footer {
 
 footer a {
   color: white; 
-  text-decoration: underline; 
+  text-decoration: underline; /* Sottolineatura sempre visibile */
   font-size: 1.2rem; 
   font-weight: normal;
+}
+
+footer a:hover {
+  color: white; /* Mantieni il colore invariato al passaggio del mouse */
+  text-decoration: underline; /* La sottolineatura rimane anche al passaggio del mouse */
 }
 
 @media (max-width: 1024px) {

@@ -193,13 +193,20 @@ footer {
 footer a {
   color: white !important; 
   text-decoration: underline !important;
-  font-size: 2rem;
+  font-size: 1.8rem; /* Imposta la stessa dimensione del font del footer */
+  padding: 0.5rem 0; /* Aggiungi un po' di spazio sopra e sotto il link */
+  display: inline-block; /* Impedisce che il link si distorca */
+  margin: 0.5rem 0; /* Aggiungi un po' di margine per separarlo dal resto del testo */
 }
 
 footer a:hover {
   color: white !important; 
   text-decoration: underline !important; 
-  font-size: 2rem;
+  font-size: 1.8rem; /* Mantieni la stessa dimensione anche al passaggio del mouse */
+}
+
+footer p {
+  font-size: 1.2rem; /* Assicura che il testo nel footer sia della stessa dimensione */
 }
 
 @media (max-width: 1024px) {

@@ -114,6 +114,10 @@ main {
   overflow: hidden;
 }
 
+.canva {
+  color: white;
+  text-decoration: underline;
+}
 
 .bg-blur {
   position: absolute;
@@ -184,11 +188,6 @@ footer {
   padding: 2rem;
   margin-top: 6rem;
   font-size: 1.2rem;
-}
-
-.canva {
-  color: white;
-  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {

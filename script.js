@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Affrontare la sovrappopolazione è una sfida globale che richiede impegno, collaborazione e soluzioni a lungo termine. Solo attraverso l’equilibrio tra popolazione e risorse potremo garantire un futuro vivibile per tutti."
       ],
       footer: {
-        names: "Made by Hicham, Aurora, Cristian e Mattia M.",
-        link: "Le nostre opinioni",
+        names: "fatto da Hicham, Aurora, Cristian e Mattia M.",
+        link: "le nostre opinioni",
         copyright: "©OVERPOPULATION"
       }
     },
@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Dealing with overpopulation is a global challenge that needs commitment, cooperation, and long-term solutions. Only by balancing population and resources can we ensure a livable future for everyone."
       ],
       footer: {
-        names: "Made by Hicham, Aurora, Cristian and Mattia M.",
-        link: "Our opinions",
+        names: "made by Hicham, Aurora, Cristian and Mattia M.",
+        link: "our opinions",
         copyright: "©OVERPOPULATION"
       }
     }

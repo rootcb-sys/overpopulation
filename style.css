@@ -193,12 +193,13 @@ footer {
 footer a {
   color: white !important; 
   text-decoration: underline !important;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 footer a:hover {
   color: white !important; 
   text-decoration: underline !important; 
+  font-size: 2rem;
 }
 
 @media (max-width: 1024px) {

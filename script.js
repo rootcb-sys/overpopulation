@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Aggiorna il footer
     footerNames.textContent = current.footer.names;
     footerLink.textContent = current.footer.link;
     footerCopyright.textContent = current.footer.copyright;

@@ -183,21 +183,18 @@ img {
 
 footer {
   background: #2c3e50;
-  color: white; 
-  text-align: center; 
-  padding: 2rem; 
-  margin-top: 6rem; 
-  font-size: 1.2rem; 
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  font-size: 1.2rem;
 }
 
 footer a {
-  background: #2c3e50;
   color: white; 
-  text-align: center; 
-  padding: 2rem; 
-  margin-top: 6rem; 
-  font-size: 1.2rem; 
   text-decoration: underline; 
+  font-size: 1.2rem; 
+  font-weight: normal;
 }
 
 @media (max-width: 1024px) {

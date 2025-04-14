@@ -190,6 +190,16 @@ footer {
   font-size: 1.2rem;
 }
 
+footer a {
+  color: white !important; /* Impedisce che il colore venga sovrascritto */
+  text-decoration: underline !important; /* Impedisce che il sottolineato venga sovrascritto */
+}
+
+footer a:hover {
+  color: white !important; /* Mantieni il colore bianco anche al passaggio del mouse */
+  text-decoration: underline !important; /* Mantieni il sottolineato anche al passaggio del mouse */
+}
+
 @media (max-width: 1024px) {
   .content {
     flex-direction: column;

@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainTitle = document.getElementById("mainTitle");
   const scrollTopLink = document.getElementById("scrollTopLink");
 
+  const footerNames = document.querySelector("footer p");
+  const footerLink = document.querySelector("footer a.canva");
+  const footerCopyright = document.querySelectorAll("footer p")[1];
+
   let isEnglish = false;
 
   const content = {
@@ -28,7 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "In ambienti affollati, le malattie infettive si diffondono più facilmente e l’accesso a cure mediche tempestive diventa più difficile. Inoltre, la carenza di acqua pulita e servizi igienici adeguati può aumentare il rischio sanitario.",
         "Promuovere l’educazione, soprattutto tra le ragazze, favorire l’accesso alla pianificazione familiare e investire nei diritti delle donne sono strategie chiave. Anche le politiche ambientali e lo sviluppo sostenibile giocano un ruolo fondamentale.",
         "Affrontare la sovrappopolazione è una sfida globale che richiede impegno, collaborazione e soluzioni a lungo termine. Solo attraverso l’equilibrio tra popolazione e risorse potremo garantire un futuro vivibile per tutti."
-      ]
+      ],
+      footer: {
+        names: "Made by Hicham, Aurora, Cristian e Mattia M.",
+        link: "Le nostre opinioni",
+        copyright: "©OVERPOPULATION"
+      }
     },
     en: {
       mainTitle: "OVERPOPULATION",
@@ -50,7 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "In crowded environments, infectious diseases spread more quickly and access to timely healthcare becomes harder. A lack of clean water and proper sanitation also increases health risks.",
         "Promoting education, especially for girls, supporting access to family planning, and investing in women’s rights are key strategies. Environmental policies and sustainable development also play an essential role.",
         "Dealing with overpopulation is a global challenge that needs commitment, cooperation, and long-term solutions. Only by balancing population and resources can we ensure a livable future for everyone."
-      ]
+      ],
+      footer: {
+        names: "Made by Hicham, Aurora, Cristian and Mattia M.",
+        link: "Our opinions",
+        copyright: "©OVERPOPULATION"
+      }
     }
   };
 
@@ -71,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const newTitle = document.createElement("h2");
       newTitle.id = title.id;
       newTitle.textContent = current.titles[i];
-      newTitle.style.fontWeight = "700"; 
+      newTitle.style.fontWeight = "700";
       title.replaceWith(newTitle);
     });
 
@@ -86,13 +100,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 300);
     });
 
-    // TRADUCI anche le voci del menu a tendina
     const menuLinks = document.querySelectorAll("#menu a");
     menuLinks.forEach((link, i) => {
       if (current.titles[i]) {
         link.textContent = current.titles[i];
       }
     });
+
+    // Aggiorna il footer
+    footerNames.textContent = current.footer.names;
+    footerLink.textContent = current.footer.link;
+    footerCopyright.textContent = current.footer.copyright;
   });
 
   scrollTopLink?.addEventListener("click", (e) => {

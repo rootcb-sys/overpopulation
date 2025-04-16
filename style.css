@@ -190,17 +190,13 @@ footer {
   font-size: 1.2rem;
 }
 
-footer a {
+#canva {
   color: white; 
   text-decoration: underline; 
   font-size: 1.2rem; 
   font-weight: normal;
 }
 
-footer a:hover {
-  color: white; 
-  text-decoration: underline; 
-}
 
 @media (max-width: 1024px) {
   .content {
